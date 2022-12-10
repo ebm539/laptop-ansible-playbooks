@@ -10,3 +10,5 @@ TODO:
 
 e.g. I'm planning to write playbooks that will put a network bridge into various states (IPv4 only, dualstack, IPv6-only, IPv6 single stack + NAT64/DNS64, and with & without ULA and default routes).
 (This network bridge is to simulate various 'real world' networks that exist, to test software and hardware)
+
+I'm also planning to write a playbook that is run on receiving a DHCPv6 prefix delegation, to create correct configuration files (from templates) for software that uses the delegated prefix (e.g. radvd) so I don't modify the files myself manually.
